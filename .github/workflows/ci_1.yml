@@ -1,9 +1,8 @@
-name: hola mundo
+name: hola-mundo
 on: push
 jobs: 
-  hola-mundo-jobs
-  runs-on: ubuntu-latest
-  steps:
-    -name hola-mundo-step
-    run: echo 'Hola mundo'
-
+  hola-mundo-jobs:
+    runs-on: ubuntu-latest  
+    steps: 
+      - name: Hola mundo
+        run: echo 'Hola mundo'
